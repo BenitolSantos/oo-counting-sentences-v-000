@@ -20,6 +20,7 @@ class String
     #| is or
     #\ escapes in regex
     @sentences_array = self.split(/\.|\?|\!/) #.split can use regex!
+      binding.pry
     #@sentences_array = self.scan(/\w+\W/)
     #we ran rspec and put pry in the tests
     @sentences_array.delete_if{|item| item == "" || item == " " }
