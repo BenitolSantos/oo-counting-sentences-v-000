@@ -24,8 +24,8 @@ class String
     #@sentences_array = self.scan(/\w+\W/)
     #we ran rspec and put pry in the tests
     @sentences_array.delete_if{|item| item == "" || item == " " }
-    #delete_if is good for middle elements and multiple elements being removed from
-    #an array.
+    #delete_if is good for middle elements and multiple elements
+    #being removed from an array.
     @sentences_array.length #because we want to see all strings
   end
 end
