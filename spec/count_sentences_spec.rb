@@ -45,7 +45,7 @@ describe String do
 
     it "returns the number of sentences in a complex string" do
       complex_string = "This, well, is a sentence. This is too!! And so is this, I think? Woo..."
-      #binding.pry #YOU CAN PUT PRY IN THE TESTS :D just run rspec
+      binding.pry #YOU CAN PUT PRY IN THE TESTS :D just run rspec
       expect(complex_string.count_sentences).to eq(4)
     end
   end
