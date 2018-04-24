@@ -47,6 +47,8 @@ describe String do
       complex_string = "This, well, is a sentence. This is too!! And so is this, I think? Woo..."
       binding.pry #YOU CAN PUT PRY IN THE TESTS :D just run rspec
       #and we ran .split on complex_string in terminal.
+      #which looked like this ["This, well, is a sentence"," This is too",""," And so is this, I think"," Woo"]
+      #which led us to using delete_if for the empty element.
       expect(complex_string.count_sentences).to eq(4)
     end
   end
